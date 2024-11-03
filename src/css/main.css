@@ -29,7 +29,7 @@ body, html{
 
 .menu-bar button{
     color: white;
-    border: none;
+    border: 1px solid var(--color-title-bar-gray); /*Added invisible border to avoid weird glitches when it actually appears on hover*/
     background-color: rgba(0, 0, 0, 0);
     font-size: 1.15rem;
     padding: 0.2rem;
@@ -38,7 +38,15 @@ body, html{
 }
 
 .menu-bar button:hover{
-    background-color: var(--color-title-bar-button-onhover-gray-lite);
+    background: rgb(111,111,111);
+    background: linear-gradient(0deg, rgba(111,111,111,1) 0%, rgba(142,142,142,0.4) 47%, rgba(181,181,181,1) 100%);
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 2.5px;
+}
+
+.menu-bar .menu-bar-icon{
+    transform: translateY(3px);
+    color: var(--color-title-bar-button-onhover-gray-lite);
 }
 
 
@@ -49,25 +57,36 @@ body, html{
     position: relative;
     display: inline-block;
 }
-  
+
 .dropdown-content {
+    border-radius: 2.5px;
     display: none;
     position: absolute;
     background-color: #e2e2e2;
-    min-width: 13rem;
+    min-width: 15rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     transform: translateY(2px);
+    padding: 0.2rem;
  }
   
 .dropdown-content a {
-    color: black;
+    color: var(--color-body-gray);
+    border: 1px solid #e2e2e2 ;
     padding: 0.5rem 1rem;
     text-decoration: none;
     display: block;
+}
+
+.dropdown-content a:hover{
+    background: rgb(209,209,209);
+    background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(233,233,233,0.248358718487395) 47%, rgba(255,255,255,0.4) 100%);
+    border-radius: 2.5px;
+    border: 1px solid var(--color-title-bar-button-onhover-gray-lite);
 }
   
 .dropdown-content a:hover {background-color: #ddd;}
   
 #dr1:hover #drc1 {display: block;}
 #dr2:hover #drc2 {display: block;}
+#dr3:hover #drc3 {display: block;}
