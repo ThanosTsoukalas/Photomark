@@ -10,13 +10,15 @@
 <body id="body">
     <div class="menu-bar">
         <div class="dropdown" id="dr1">
-        <button id="menu-bar-item">File</button>
-        <div class="dropdown-content" id="drc1">
-            <a href="#">Open</a>
-            <a href="#">New File</a>
-            <a href="#">New Window</a>
-            <a href="#">Export <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
-          </div>
+            <button id="menu-bar-item">File</button>
+            <div class="dropdown-content" id="drc1">
+                <a href="#">Open</a>
+                <a href="#">New File</a>
+                <a href="#">New Window</a>
+                <a href="#">Export <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">Save</a>
+                <a href="#">Save as</a>
+             </div>
         </div>
         <div class="dropdown" id="dr2">
             <button id="menu-bar-item">Edit</button>
@@ -39,12 +41,49 @@
                 <a href="#">Zoom Out</a>
             </div>
         </div>
+        <div class="dropdown" id="dr4">
+            <button id="menu-bar-item">Options</button>
+            <div class="dropdown-content" id="drc4">
+                <a href="#">Change Canvas Size</a>
+                <a href="#">Open in Animation Editor</a>
+            </div>
+        </div>
+        <div class="dropdown" id="dr5">
+            <button id="menu-bar-item">Filters</button>
+            <div class="dropdown-content" id="drc5">
+                <a href="#">Mask <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">Add Adjustment Layer <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">Convert to 3D Object <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">Convert to Vector Image <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">Quick Filters <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+            </div>
+        </div>
+        <div class="dropdown" id="dr6">
+            <button id="menu-bar-item">Insert</button>
+            <div class="dropdown-content" id="drc6">
+                <a href="#">Insert 3D Object <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">Shapes <ion-icon name="chevron-forward-sharp" class="menu-bar-icon"></ion-icon></a>
+                <a href="#">New Layer</a>
+
+        </div>
         
-        <button id="menu-bar-item">Options</button>
-        <button id="menu-bar-item">Filters</button>
-        <button id="menu-bar-item">Insert</button>
+        
+        
         <button id="menu-bar-item">3DFX</button>
+        <button id="menu-bar-item">Layer</button>
+        <button id="menu-bar-item">Select</button>
+        <button id="menu-bar-item">Image</button>
         <button id="menu-bar-item">Help</button>
+    </div>
+
+    <div class="main-wrapper">
+        <img src="assets/photoMarkLogoRemovedBackground.png" class="logo">
+        <h2 class="welcome-message">Welcome back, Thanos!</h2>
+        <div class="quick-actions-or-files">
+            <h2 class="quick-actns-heading" id="quickActionsHeading">
+
+            </h2>
+        </div>
     </div>
 </body>
 <script src="js/main.js"></script>
