@@ -1,8 +1,5 @@
-/* @font-face {
-    font-family: 'Myriad Pro';
-    src: url('/src/fonts/MyriadPro-Light.otf');
-} */
 @import url('https://fonts.cdnfonts.com/css/myriad-pro-5');
+
 :root{
     --color-title-bar-gray: rgb(52, 52, 52); 
     --color-title-bar-button-onhover-gray-lite: rgb(120, 120, 120); 
